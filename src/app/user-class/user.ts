@@ -6,8 +6,8 @@ export class User {
     public created_at:Date,
     public updated_at:Date,
     public avatar_url:any,
-    public followers_url:number,
-    public following_url:number, 
+    public followers:number,
+    public following:number, 
     public html_url:string 
     ) {}
   

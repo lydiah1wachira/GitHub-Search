@@ -15,8 +15,8 @@
           <p class="card-text">Bio: {{ user.bio }}</p>
           <p class="card-text">Repositories: {{ user.public_repos }}</p>
           <p class="card-text">Joined on: {{ user.created_at | date }}</p>
-          <p class="card-text">followers: {{ user.followers_url }}</p>
-          <p class="card-text">following: {{ user.following_url }}</p>
+          <p class="card-text">followers: {{ user.followers }}</p>
+          <p class="card-text">following: {{ user.following }}</p>
           <a target="blank" href="{{ user.html_url }}"
             ><button class="btn btn-dark">View on Github</button></a
           >
