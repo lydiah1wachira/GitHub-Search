@@ -2,10 +2,15 @@
 
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
       <div class="card">
-        <div class="card-header">{{ user.login }}'s profile</div>
-        <img src="{{ user.avatar_url }}" height="100px" alt="github profile" />
+        <div class="card-header profile-name">{{ user.login }}'s profile</div>
+        <img
+          src="{{ user.avatar_url }}"
+          class="profile-pic"
+          alt="github profile"
+        />
         <div class="card-body">
           <p class="card-text">Bio: {{ user.bio }}</p>
           <p class="card-text">Repositories: {{ user.public_repos }}</p>
@@ -13,21 +18,24 @@
           <p class="card-text">followers: {{ user.followers_url }}</p>
           <p class="card-text">following: {{ user.following_url }}</p>
           <a target="blank" href="{{ user.html_url }}"
-            ><button>View on Github</button></a
+            ><button class="btn btn-dark">View on Github</button></a
           >
         </div>
       </div>
     </div>
-    <div class="col-md-8">
-      <h2>Repositories</h2>
-      <div class="col-md-4" *ngFor="let repo of repo">
-        <div class="card">
-          <h3>{{ repo.name | uppercase}}</h3>
-          <p class="card-text">Description: {{ repo.description}}</p>
-          <p class="card-text"> created: {{ repo.created_at}}</p>
-        </div>
-
+    <div class="col-md-3"></div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <h2 class="repo-heading">REPOSITORIES</h2>
+    <div class="col-sm-3" *ngFor="let repo of repo">
+      <div class="card">
+        <h4>{{ repo.name | uppercase }}</h4>
+        <p class="card-text">Description: {{ repo.description }}</p>
+        <p class="card-text">created: {{ repo.created_at }}</p>
       </div>
     </div>
   </div>
 </div>
+
