@@ -1,1 +1,20 @@
-<p>git-search-form works!</p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <form style="display: flex" action="" (ngSubmit)="inputClick(username)">
+        <input
+          class="form-control form1"
+          type="search"
+          placeholder="Search"
+          id="found"
+          name="username"
+          autocomplete="off"
+          [(ngModel)]="username"
+        />
+        <span class="searchButton">
+          <i (click)="inputClick(username)" class="bx bxs-search-alt-2"></i>
+        </span>
+      </form>
+    </div>
+  </div>
+</div>
