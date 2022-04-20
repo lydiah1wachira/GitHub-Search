@@ -40,7 +40,7 @@
     <h2 class="repo-heading">REPOSITORIES</h2>
     <div class="col-sm-3" *ngFor="let repo of repo">
       <div class="card">
-        <h4>{{ repo.name | uppercase }}</h4>
+        <h4 appHighlight>{{ repo.name | uppercase }}</h4>
         <p class="card-text">Description: {{ repo.description }}</p>
         <p class="card-text">created: {{ repo.created_at }}</p>
       </div>
