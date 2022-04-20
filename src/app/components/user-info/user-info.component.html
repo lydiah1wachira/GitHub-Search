@@ -42,7 +42,7 @@
       <div class="card">
         <h4 appHighlight>{{ repo.name | uppercase }}</h4>
         <p class="card-text">Description: {{ repo.description }}</p>
-        <p class="card-text">created: {{ repo.created_at }}</p>
+        <p class="card-text">created: {{ repo.created_at |dateCount}} </p>
       </div>
     </div>
   </div>
