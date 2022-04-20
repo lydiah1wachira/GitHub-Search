@@ -1,11 +1,16 @@
-<app-git-search-form (newUsername)="getData($event)"></app-git-search-form>
+
+
+
 
 <div class="container-fluid">
+
   <div class="row">
-    <div class="col-md-3"></div>
+    <div class="col-md-3">
+      <app-git-search-form (newUsername)="getData($event)"></app-git-search-form>
+    </div>
     <div class="col-md-6">
       <div class="card">
-        <div class="card-header profile-name">{{ user.login }}'s profile</div>
+        <div class="card-header profile-name">{{ user.login }} </div>
         <img
           src="{{ user.avatar_url }}"
           class="profile-pic"

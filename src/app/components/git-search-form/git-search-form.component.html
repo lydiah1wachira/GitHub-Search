@@ -1,19 +1,28 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col">
-      <form style="display: flex" action="" (ngSubmit)="inputClick(username)">
-        <input
-          class="form-control form1"
-          type="search"
-          placeholder="Search"
-          id="found"
-          name="username"
-          autocomplete="off"
-          [(ngModel)]="username"/>
-        <span class="searchButton">
-          <i (click)="inputClick(username)" class="bx bxs-search-alt-2"></i>
-        </span>
+      <form action="" (ngSubmit)="inputClick(username)">
+        <div class="form-group">
+          <label for="find" class="find"> Github Username:</label>
+          <input
+            class="form-control"
+            type="search"
+            placeholder="Enter Username:"
+            id="find"
+            name="username"
+            autocomplete="off"
+            [(ngModel)]="username"
+          />
+        </div>
+
+        <button
+          (click)="inputClick(username)"
+          class="btn btn-dark searchButton"
+        >
+          Search
+        </button>
       </form>
     </div>
   </div>
 </div>
+
