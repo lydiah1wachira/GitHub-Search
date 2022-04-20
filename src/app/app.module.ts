@@ -7,12 +7,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GitSearchFormComponent } from './components/git-search-form/git-search-form.component';
 import { UserInfoComponent } from './components/user-info/user-info.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     GitSearchFormComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    NavbarComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
