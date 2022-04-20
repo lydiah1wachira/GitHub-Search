@@ -9,6 +9,7 @@ import { GitSearchFormComponent } from './components/git-search-form/git-search-
 import { UserInfoComponent } from './components/user-info/user-info.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HighlightDirective } from './highlight.directive';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HighlightDirective } from './highlight.directive';
     GitSearchFormComponent,
     UserInfoComponent,
     NavbarComponent,
-    HighlightDirective
+    HighlightDirective,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,
