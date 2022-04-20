@@ -20,3 +20,14 @@
   margin-bottom: 15px;
   font-weight: 500;
 }
+
+.intro-section{
+  padding-top: 3%;
+  color: aliceblue;
+  text-align: center;
+}
+
+.heading1{
+  font-weight: 600;
+  font-size: 200%;
+}

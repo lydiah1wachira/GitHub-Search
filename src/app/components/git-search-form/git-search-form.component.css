@@ -5,3 +5,9 @@
 .searchButton{
   margin-top: 10px;
 }
+
+#searchForm{
+  margin-top: 15%;
+  padding:2%;
+  background-color: rgba(156, 148, 199, 0.8);
+}
